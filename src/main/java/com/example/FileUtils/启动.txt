@@ -1,0 +1,2 @@
+java -jar -Dhttp.proxyPort=21 -Dhttp.proxyHost=173.170.11.12 TestAlgo.jar
+Main-Class: TestAlgo
