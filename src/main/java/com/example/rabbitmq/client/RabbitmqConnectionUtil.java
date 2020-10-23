@@ -28,7 +28,8 @@ public class RabbitmqConnectionUtil {
         path = path.substring(1, path.indexOf(".war") + 5);
         try {
             //拼接配置文件路径
-            FileReader reader = new FileReader(path + "properties/rabbitmq.properties");
+            path = "E:\\IDEA\\quarts-demo\\src\\main\\resources\\" ;
+            FileReader reader = new FileReader(path + "/rabbitmq.properties");
             Properties pp = new Properties();
             pp.load(reader);
 

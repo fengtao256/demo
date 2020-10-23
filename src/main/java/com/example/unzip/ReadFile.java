@@ -29,11 +29,13 @@ public class ReadFile {
     }
     public static void main(String[] args) throws java.io.IOException {
         // TODO Auto-generated method stub
-        String fileName = "E:\\test\\phpwind9.0mobankaifashouce\\phpwind9.0模板开发手册/index.html";
-        String writepath = "E:\\test\\phpwind9.0mobankaifashouce\\phpwind9.0模板开发手册/index123456.html";
+//        String fileName = "E:\\test\\phpwind9.0mobankaifashouce\\phpwind9.0模板开发手册/index.html";
+//        String writepath = "E:\\test\\phpwind9.0mobankaifashouce\\phpwind9.0模板开发手册/index123456.html";
         // readFileByBytes(fileName);
         // readFileByChars(fileName);
-        readFileByLines(fileName,writepath);
+//        readFileByLines(fileName,writepath);
+        File file = new File("F:"+File.separator+"HK-workspace\\JBOSS\\JBoss4.2-hkks\\server\\default\\.\\deploy\\HKKnowledgeStudio" +
+                ".war\\TaskFile\\QuickLabels\\78c15943d7d8415997acc05f653c23a0\\source\\新建文本文档 (2).txt") ;
         // readFileByRandomAccess(fileName);
     }
 //

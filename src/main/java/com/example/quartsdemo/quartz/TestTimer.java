@@ -7,7 +7,7 @@ import java.util.*;
 public class TestTimer {
     static int count = 0;
     static {
-        //showTimer();
+        showTimer();
     }
     public static void showTimer() {
         TimerTask task = new TimerTask() {
@@ -24,16 +24,17 @@ public class TestTimer {
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);//每天
         //定制每天的23:09:00执行，
-        calendar.set(year, month, day, 17, 36, 00);
+        calendar.set(year, month, day, 00, 00, 00);
         Date date = calendar.getTime();
         Timer timer = new Timer();
         System.out.println(date);
 
-//        int period = 2 * 1000;
-//        //每天的date时刻执行task，每隔2秒重复执行
-//        timer.schedule(task, date, period);
-        //每天的date时刻执行task, 仅执行一次
-        timer.schedule(task, date);
+        int period = 60*1000;
+        //每天的date时刻执行task，每隔2秒重复执行
+//        timer.schedule(task,period);
+        timer.schedule(task, date, period);
+//        //每天的date时刻执行task, 仅执行一次
+//        timer.schedule(task, date);
     }
 
     public static void main(String[] args) {

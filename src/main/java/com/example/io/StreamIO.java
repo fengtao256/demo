@@ -15,7 +15,7 @@ public class StreamIO {
 //            c = br.readLine();
 //            System.out.println(c);
 //        } while (!c.equals("q"));
-
+        System.out.println();
         System.out.println(new SimpleDateFormat("yyyy:MM:dd HH:mm:ss").format(new SimpleDateFormat("yyyyMMddHHmmss").parse("20191122112211")));
     }
 }
