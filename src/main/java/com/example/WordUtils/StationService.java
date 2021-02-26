@@ -38,42 +38,42 @@ public class StationService {
         	if(num.toString().equals("0")){//添加信息
         		String uuid01 = UUID.randomUUID().toString().replace("-","") ;
 				String uuid02 = UUID.randomUUID().toString().replace("-","") ;
-//				int effectNum = session.createSQLQuery(insertSql)
-//						.setString(0, (String)dataMap.get("patient_id"))
-//						.setString(1, (String)dataMap.get("patient_name"))
-//						.setString(2, (String)dataMap.get("patient_age"))
-//						.setString(3, (String)dataMap.get("patient_in_time"))
-//						.setString(4, (String)dataMap.get("patient_out_time"))
-//						.executeUpdate();
-//				Thread.sleep(2);
-//				int effectNum01 = session.createSQLQuery(insertSql01)
-//						.setString(0,uuid01)
-//						.setString(1, (String)dataMap.get("patient_id"))
-//						.setString(2, (String)dataMap.get("ZS"))
-//						.setString(3, (String)dataMap.get("XBS"))
-//						.setString(4, (String)dataMap.get("JWS"))
-//						.setString(5, (String)dataMap.get("GRS"))
-//						.setString(6, (String)dataMap.get("YJS"))
-//						.setString(7, (String)dataMap.get("HYS"))
-//						.setString(8, (String)dataMap.get("JZS"))
-//						.setString(9, (String)dataMap.get("TGJC"))
-//						.setString(10, (String)dataMap.get("ZKJC"))
-//						.setString(11, (String)dataMap.get("ZYSZQK"))
-//						.setString(12, (String)dataMap.get("RYZD"))
-//						.setString(13, (String)dataMap.get("FZJC"))
-//						.executeUpdate();Thread.sleep(2);
-//				int effectNum02 = session.createSQLQuery(insertSql02)
-//						.setString(0,uuid02)
-//						.setString(1, (String)dataMap.get("patient_id"))
-//						.setString(2, (String)dataMap.get("RYSQK"))
-//						.setString(3, (String)dataMap.get("RYZD"))
-//						.setString(4, (String)dataMap.get("RYHZLJG"))
-//						.setString(5, (String)dataMap.get("CYZD"))
-//						.setString(6, (String)dataMap.get("CYQK"))
-//						.setString(7, (String)dataMap.get("CYYZ"))
-//						.setString(8, (String)dataMap.get("ZYTH"))
-//						.setString(9, (String)dataMap.get("CYDY"))
-//						.executeUpdate();Thread.sleep(2);
+				int effectNum = session.createSQLQuery(insertSql)
+						.setString(0, (String)dataMap.get("patient_id"))
+						.setString(1, (String)dataMap.get("patient_name"))
+						.setString(2, (String)dataMap.get("patient_age"))
+						.setString(3, (String)dataMap.get("patient_in_time"))
+						.setString(4, (String)dataMap.get("patient_out_time"))
+						.executeUpdate();
+				Thread.sleep(2);
+				int effectNum01 = session.createSQLQuery(insertSql01)
+						.setString(0,uuid01)
+						.setString(1, (String)dataMap.get("patient_id"))
+						.setString(2, (String)dataMap.get("ZS"))
+						.setString(3, (String)dataMap.get("XBS"))
+						.setString(4, (String)dataMap.get("JWS"))
+						.setString(5, (String)dataMap.get("GRS"))
+						.setString(6, (String)dataMap.get("YJS"))
+						.setString(7, (String)dataMap.get("HYS"))
+						.setString(8, (String)dataMap.get("JZS"))
+						.setString(9, (String)dataMap.get("TGJC"))
+						.setString(10, (String)dataMap.get("ZKJC"))
+						.setString(11, (String)dataMap.get("ZYSZQK"))
+						.setString(12, (String)dataMap.get("RYZD"))
+						.setString(13, (String)dataMap.get("FZJC"))
+						.executeUpdate();Thread.sleep(2);
+				int effectNum02 = session.createSQLQuery(insertSql02)
+						.setString(0,uuid02)
+						.setString(1, (String)dataMap.get("patient_id"))
+						.setString(2, (String)dataMap.get("RYSQK"))
+						.setString(3, (String)dataMap.get("RYZD"))
+						.setString(4, (String)dataMap.get("RYHZLJG"))
+						.setString(5, (String)dataMap.get("CYZD"))
+						.setString(6, (String)dataMap.get("CYQK"))
+						.setString(7, (String)dataMap.get("CYYZ"))
+						.setString(8, (String)dataMap.get("ZYTH"))
+						.setString(9, (String)dataMap.get("CYDY"))
+						.executeUpdate();Thread.sleep(2);
 				int effectNum03 = 0 ;
                 for ( Map<String, Object> map : dataList ) {
 					String uuid03 = UUID.randomUUID().toString().replace("-","") ;
